@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block  title%}
+About
+        {% endblock %}
+
+{%block  content%}
+About Page        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Event Management</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body align ="center">
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: beige;
+        }
+        h2{
+            color: antiquewhite;
+        }
+        p{  
+            color: aqua;
+        }
+        img{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            
+        }
+
+    </style>
+
+    <header>
+        <nav>
+            <!-- Your navigation links if needed -->
+        </nav>
+        <h1 align="center">Stellar Events </h1>
+    </header>
+
+    <section id="hero" align="center">
+        <img src="{% static 'images/event3.jpg' %}" alt="Event Management Team"  height="400px" width="400px">
+        <div class="hero-text">
+            <h2>Welcome to Our World of Unforgettable Events!</h2>
+            <p>We are not just event planners; we are architects of experiences, curators of memories, and
+                orchestrators of joy.</p>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="mission-text">
+            <h2>Our Mission</h2>
+            <p>At Stellar Events, our mission is to transform your dreams into reality. We strive
+                to create events that not only meet your expectations but exceed them, leaving an indelible mark on
+                your heart.</p>
+        </div>
+        <div>
+        <img src="{% static 'images/event4.jpg' %}" alt="Mission Image" height="200px" width="200px">
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="team-members">
+            <!-- Add individual team member sections with photos and descriptions -->
+            <div class="team-member">
+                
+                <h3>Sudheep</h3>
+                <p>Event Coordinator</p>
+            </div>
+            <!-- Repeat for other team members -->
+        </div>
+    </section>
+
+    <section id="contact" align="center">
+        <h2>Contact Us</h2>
+        <p>Ready to turn your event into an extraordinary experience? Let's connect!</p>
+        <a href="contact.html" class="btn-contact">Get in Touch</a>
+    </section>
+
+    <footer align="center">
+        <p>&copy; 2024 [Your Event Management Company]. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
+
+
+        {% endblock %}
